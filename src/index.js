@@ -1,12 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import ExampleProps from './ExampleProps'
+import ExampledefualtAppProps from './ExampledefualtAppProps'
+import ExampleCombineStateProps from './ExampleCombineStateProps'
+import Person from './Person/person';
+import ExamplesetSate from './ExamplesetState'
+ReactDOM.render(
+    <section>
+        <ExamplesetSate/>
+        <Person name='hassan' age='27' >this is my content for props children</Person>
+        <ExampleProps header="header" content="content" />
+        <ExampledefualtAppProps />
+        <ExampleCombineStateProps />
+        
+    </section>
+    , document.getElementById('root'));
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: http://bit.ly/CRA-PWA
-serviceWorker.unregister();
+
