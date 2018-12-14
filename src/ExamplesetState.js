@@ -14,7 +14,7 @@ class changeState extends Component {
         this.element+=1;
         this.setState({
         version:'1.0',
-        users:[...this.state.users,{name:'hassan'+this.element}]
+        users:[...this.state.users,{name:'element'+this.element}]
         }
         )
         console.log(this.state.users)
